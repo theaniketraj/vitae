@@ -6,3 +6,7 @@ cv.pdf
 cv.run.xml
 cv.synctex.gz
 indent.log
+cv.bbl
+cv.blg
+cv.fls
+cv.fdb_latexmk

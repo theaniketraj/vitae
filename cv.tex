@@ -86,14 +86,16 @@
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 
 %Setup hyperref package, and colours for links
-\usepackage[unicode, draft=false]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
 %debug page outer frames
 %\usepackage{showframe}
@@ -143,12 +145,11 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-	\Huge{Aniket Raj}                                                  \\[7.5pt]
-	\href{https://github.com/theaniketraj}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \
-	\href{https://linkedin.com/in/theaniketraj}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \
-	\href{https://theaniketraj.netlify.app}{\raisebox{-0.05\height}\faGlobe \ Portfolio} \ $|$ \
-	\href{mailto:theaniketraj@hotmail.com}{\raisebox{-0.05\height}\faEnvelope \ E-Mail} \ $|$ \
-	\href{tel:+919508826151}{\raisebox{-0.05\height}\faMobile \ Phone} \\
+	\Huge{Aniket Raj}                                                  \\[4.5pt]
+	\href{https://linkedin.com/in/theaniketraj}{\faLinkedin\ linkedin.com/in/theaniketraj}
+	\href{https://theaniketraj.netlify.app}{\faGlobe\ theaniketraj.netlify.app}
+	\href{mailto:theaniketraj@hotmail.com}{\faEnvelope\ theaniketraj@hotmail.com}
+	\href{tel:+919508826151}{\faMobile\ 9508826151}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -157,7 +158,7 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-I’m a fourth-year B.Tech student specializing in Computer Science and Engineering. With a strong foundation in programming, data structures and algorithms, I’m passionate about leveraging technology to solve real-world problems. I’m driven by curiosity and a desire to innovate. Be it developing a new app, optimizing an algorithm, or exploring the latest trends in AI and machine learning, I’m always eager to learn and grow.
+Final-year Computer Science student focused on systems, tooling, and building reliable software. Currently developing Ved, a declarative systems programming framework for deterministic orchestration. Strong interest in low-level design, runtime behavior, and scalable system architecture.
 
 %Experience
 %\section{Work Experience}
@@ -176,37 +177,37 @@ I’m a fourth-year B.Tech student specializing in Computer Science and Engineer
 \section{Projects}
 
 \begin{tabularx}{\linewidth} { @{}l r@{} }
-	\textbf{Project KARL} & \hfill \href{https://karldocs.netlify.app}{Project KARL {\scriptsize\faExternalLink*}} \\[3.75pt]
+	\textbf{Ved - Deterministic Orchestration for Distributed Software} & \hfill \href{https://vedlanghq.netlify.app}{vedlanghq.netlify.app} \\[2.75pt]
 	\multicolumn{2}{@{}X@{}}{
 	\begin{itemize}[leftmargin=1em]
-		\item AI personal assistant boosting productivity and streamlining daily tasks.
-		\item Uses NLP and ML to understand queries and give accurate answers.
-		\item Provides task and calendar management plus personalized recommendations.
-		\item Simplifies complex tasks, improving personal and professional efficiency.
+		\item Designed a deterministic orchestration system for managing distributed software environments
+		\item Focused on reliability and idempotent operations for control-plane style workloads
+		\item Exploring compiler-like abstractions and effect-handling mechanisms for external integrations
+		\item Built CLI tooling and runtime layer to define and enforce system state convergence
+	\end{itemize}
+	}                                                                                                              \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth} { @{}l r@{} }
+	\textbf{Project KARL} & \hfill \href{https://karldocs.netlify.app}{karldocs.netlify.app} \\[2.75pt]
+	\multicolumn{2}{@{}X@{}}{
+	\begin{itemize}[leftmargin=1em]
+		\item Built an AI assistant integrating NLP pipelines for task automation and query understanding
+		\item Implemented task scheduling, calendar integration, and recommendation logic
+		\item Used ML models for intent recognition and response generation
+		\item Focused on improving productivity workflows through automation
 	\end{itemize}
 	}                                                                                                              \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-	\textbf{Raptor} & \hfill \href{https://raptorai.netlify.app}{Raptor {\scriptsize\faExternalLink*}} \\[3.75pt]
+	\textbf{Plastecure} & \hfill \href{https://plastecure.netlify.app}{plastecure.netlify.app} \\[2.75pt]
 	\multicolumn{2}{@{}X@{}}{
 	\begin{itemize}[leftmargin=1em]
-		\item AI smart helmet enhancing rider safety with real-time accident detection and emergency alerts.
-		\item Combines IoT sensors, AI crash detection, and automated emergency response.
-		\item Tackles delayed medical aid in two-wheeler accidents.
-		\item Auto-detects crashes and notifies emergency contacts with live location.
-	\end{itemize}
-	}                                                                                                  \\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-	\textbf{Plastecure} & \hfill \href{https://plastecure.netlify.app}{Plastecure {\scriptsize\faExternalLink*}} \\[3.75pt]
-	\multicolumn{2}{@{}X@{}}{
-	\begin{itemize}[leftmargin=1em]
-		\item Smart system combating plastic waste through bottle recycling.
-		\item Uses TensorFlow Lite, Arduino Uno, ESP32 (Wi-Fi + cam) \& ultrasonic sensors for efficiency.
-		\item Incentivizes and automates bottle return with ML-based classification.
-		\item Promotes sustainability by reducing plastic waste and improving recycling.
+		\item Secured 1st place among 150+ teams in a competitive engineering challenge
+		\item Developed an IoT-based system using ESP32, Arduino, and sensors for automated bottle recycling
+		\item Integrated TensorFlow Lite for on-device waste classification
+		\item Designed real-time detection pipeline using ultrasonic sensors and camera input
 	\end{itemize}
 	}                                                                                                            \\
 \end{tabularx}
@@ -218,9 +219,22 @@ I’m a fourth-year B.Tech student specializing in Computer Science and Engineer
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 	2022 - present & B.Tech (CSE) at \textbf{DIATM} \hfill \normalsize                      \\ %(GPA: 4.0/4.0) \\
 
-	2022 - 2020    & Intermediate Degree at \textbf{BVP CPR} \hfill \normalsize (CGPA: 7.6) \\
+	2020 - 2022    & Intermediate Degree at \textbf{BVP CPR} \hfill \normalsize (CGPA: 7.6) \\
 
-	2020 - 2018    & Secondary Degree at \textbf{BVP CPR} \hfill \normalsize (CGPA: 8.6)    \\
+	2018 - 2020    & Secondary Degree at \textbf{BVP CPR} \hfill \normalsize (CGPA: 8.6)    \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS & CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section{Awards \& Certifications}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+	2024 & \textbf{Certificate of Excellence \& Memento of Recognition} -  DIATM\hfill \normalsize \\
+	\multicolumn{2}{@{}X@{}}{
+	\begin{itemize}[leftmargin=1em]
+		\item Secured 1st place among 150+ teams for designing and implementing an IoT-based plastic recycling system
+	\end{itemize}
+	}                                                                                                              \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -237,12 +251,12 @@ I’m a fourth-year B.Tech student specializing in Computer Science and Engineer
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-	Languages           & \normalsize{Kotlin, Java, Python, HTML5, CSS3, Javascript, SQL}                                                     \\
-	Android Development & \normalsize{Android SDK, Retrofit, OkHttp, Coroutines, Flow, Dagger Hilt, Firebase Integration, Unit \& UI Testing} \\
-	AI \& Automation    & \normalsize{TensorFlow Lite, Keras, Scikit-learn, Pandas, NumPy, OpenCV, Selenium, Scripting}                       \\
+	Languages           & \normalsize{Kotlin, Java, Python, Javascript, SQL}                                                     \\
+	Systems \& Tools & \normalsize{CLI tooling, REST APIs, Git} \\
+	Android    & \normalsize{SDK, Retrofit, Coroutines, Flow, Hilt}                       \\
+	AI/ML 			  & \normalsize{TensorFlow Lite, Scikit-learn, OpenCV} \\
 \end{tabularx}
 
 \vfill
-\center{\footnotesize Last updated: \today}
 
 \end{document}
